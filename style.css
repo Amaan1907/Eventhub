@@ -1,0 +1,295 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f6fa;
+    color: #222;
+}
+
+header {
+    background: #17172b;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ff8c42;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.login {
+    color: white;
+}
+
+.register, .btn {
+    background: #ff8c42;
+    color: white;
+}
+
+.hero {
+    text-align: center;
+    padding: 110px 20px;
+    background: linear-gradient(120deg, #24243e, #444477);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #ff9c5a;
+}
+
+.hero p {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.events {
+    padding: 60px 7%;
+    text-align: center;
+}
+
+.events h2, .about h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.event-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.event-card {
+    background: white;
+    width: 280px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px #ddd;
+}
+
+.event-image {
+    background: #eeeaff;
+    padding: 35px;
+    font-size: 50px;
+    border-radius: 8px;
+}
+
+.event-card h3 {
+    margin: 18px 0 10px;
+}
+
+.event-card p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.event-card a {
+    display: inline-block;
+    background: #29294a;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.about {
+    text-align: center;
+    padding: 50px 10%;
+    background: white;
+}
+
+.about p {
+    line-height: 1.7;
+}
+
+footer {
+    background: #17172b;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+@media(max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+
+/* Login and Registration */
+
+.auth-box {
+    width: 380px;
+    max-width: 90%;
+    margin: 70px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px #ddd;
+    text-align: center;
+}
+
+.auth-box h2 {
+    margin-bottom: 12px;
+    color: #24243e;
+}
+
+.auth-box p {
+    margin: 15px 0;
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.auth-box button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 12px;
+    background: #ff8c42;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.auth-box button:hover {
+    background: #e8752e;
+}
+
+.auth-box a {
+    color: #ff8c42;
+    text-decoration: none;
+}
+
+.message {
+    color: #d35400;
+    font-size: 14px;
+}
+
+.logout-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #e74c3c;
+    color: white !important;
+    border-radius: 6px;
+}
+
+.admin-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 25px;
+}
+
+.admin-container h1,
+.admin-container h2 {
+    color: #24243e;
+    margin: 20px 0;
+}
+
+.admin-form {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px #ddd;
+}
+
+.admin-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.admin-form input,
+.admin-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.admin-form textarea {
+    min-height: 80px;
+}
+
+.admin-form button,
+.admin-event button {
+    background: #ff8c42;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.admin-event {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #ddd;
+}
+
+.admin-event a {
+    display: inline-block;
+    padding: 8px 15px;
+    background: #29294a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.admin-event form {
+    display: inline-block;
+}
